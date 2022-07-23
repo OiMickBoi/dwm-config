@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>st - simple terminal | suckless.org software that sucks less</title>
+	<link rel="stylesheet" type="text/css" href="//suckless.org/pub/style.css"/>
+</head>
+
+<div id="header">
+	<a href="//suckless.org/"><img src="//suckless.org/logo.svg" alt=""/></a>&nbsp;
+	<a id="headerLink" href="//suckless.org/">suckless.org</a>
+	<span class="hidden"> - </span>
+	<span id="headerSubtitle">st - simple terminal</span>
+</div>
+<hr class="hidden"/>
+<div id="menu">
+	<a href="//suckless.org/">home</a>
+	<a href="//dwm.suckless.org/">dwm</a>
+	<a href="//st.suckless.org/"><b>st</b></a>
+	<a href="//core.suckless.org/">core</a>
+	<a href="//surf.suckless.org/">surf</a>
+	<a href="//tools.suckless.org/">tools</a>
+	<a href="//libs.suckless.org/">libs</a>
+	<a href="//ev.suckless.org/">e.V.</a>
+	<span class="right">
+		<a href="//dl.suckless.org">download</a>
+		<a href="//git.suckless.org">source</a>
+	</span>
+</div>
+<hr class="hidden"/>
+<div id="content">
+<div id="nav">
+	<ul>
+	<li><a href="/">about</a></li>
+	<li><a href="//st.suckless.org/goals/">goals/</a></li>
+	<li><a href="//st.suckless.org/patches/"><b>patches/</b></a>
+		<ul>
+		<li><a href="//st.suckless.org/patches/alpha/">alpha/</a></li>
+		<li><a href="//st.suckless.org/patches/alpha_focus_highlight/">alpha focus highlight/</a></li>
+		<li><a href="//st.suckless.org/patches/anygeometry/">anygeometry/</a></li>
+		<li><a href="//st.suckless.org/patches/anysize/">anysize/</a></li>
+		<li><a href="//st.suckless.org/patches/autocomplete/">autocomplete/</a></li>
+		<li><a href="//st.suckless.org/patches/background_image/">background image/</a></li>
+		<li><a href="//st.suckless.org/patches/blinking_cursor/">blinking cursor/</a></li>
+		<li><a href="//st.suckless.org/patches/bold-is-not-bright/">bold is not bright/</a></li>
+		<li><a href="//st.suckless.org/patches/boxdraw/">boxdraw/</a></li>
+		<li><a href="//st.suckless.org/patches/charoffsets/">charoffsets/</a></li>
+		<li><a href="//st.suckless.org/patches/clipboard/">clipboard/</a></li>
+		<li><a href="//st.suckless.org/patches/colors_at_launch/">colors at launch/</a></li>
+		<li><a href="//st.suckless.org/patches/copyurl/">copyurl/</a></li>
+		<li><a href="//st.suckless.org/patches/csi_22_23/">csi 22 23/</a></li>
+		<li><a href="//st.suckless.org/patches/cyclefonts/">cyclefonts/</a></li>
+		<li><a href="//st.suckless.org/patches/defaultfontsize/">defaultfontsize/</a></li>
+		<li><a href="//st.suckless.org/patches/delkey/">delkey/</a></li>
+		<li><a href="//st.suckless.org/patches/desktopentry/">desktopentry/</a></li>
+		<li><a href="//st.suckless.org/patches/disable_bold_italic_fonts/">disable bold italic fonts/</a></li>
+		<li><a href="//st.suckless.org/patches/dracula/">dracula/</a></li>
+		<li><a href="//st.suckless.org/patches/dynamic-cursor-color/">dynamic cursor color/</a></li>
+		<li><a href="//st.suckless.org/patches/externalpipe/">externalpipe/</a></li>
+		<li><a href="//st.suckless.org/patches/externalpipe-signal/">externalpipe signal/</a></li>
+		<li><a href="//st.suckless.org/patches/fix_ime/">fix ime/</a></li>
+		<li><a href="//st.suckless.org/patches/fix_keyboard_input/">fix keyboard input/</a></li>
+		<li><a href="//st.suckless.org/patches/font2/">font2/</a></li>
+		<li><a href="//st.suckless.org/patches/fullscreen/">fullscreen/</a></li>
+		<li><a href="//st.suckless.org/patches/glyph_wide_support/">glyph wide support/</a></li>
+		<li><a href="//st.suckless.org/patches/gradient/">gradient/</a></li>
+		<li><a href="//st.suckless.org/patches/gruvbox/">gruvbox/</a></li>
+		<li><a href="//st.suckless.org/patches/gruvbox-material/">gruvbox material/</a></li>
+		<li><a href="//st.suckless.org/patches/hidecursor/">hidecursor/</a></li>
+		<li><a href="//st.suckless.org/patches/invert/">invert/</a></li>
+		<li><a href="//st.suckless.org/patches/iso14755/">iso14755/</a></li>
+		<li><a href="//st.suckless.org/patches/keyboard_select/">keyboard select/</a></li>
+		<li><a href="//st.suckless.org/patches/ligatures/">ligatures/</a></li>
+		<li><a href="//st.suckless.org/patches/line_snap_delimiter/">line snap delimiter/</a></li>
+		<li><a href="//st.suckless.org/patches/moonfly/">moonfly/</a></li>
+		<li><a href="//st.suckless.org/patches/nano_shortcuts_support/">nano shortcuts support/</a></li>
+		<li><a href="//st.suckless.org/patches/netwmicon/">netwmicon/</a></li>
+		<li><a href="//st.suckless.org/patches/newterm/">newterm/</a></li>
+		<li><a href="//st.suckless.org/patches/nobadweight/">nobadweight/</a></li>
+		<li><a href="//st.suckless.org/patches/nordtheme/">nordtheme/</a></li>
+		<li><a href="//st.suckless.org/patches/open_copied_url/">open copied url/</a></li>
+		<li><a href="//st.suckless.org/patches/openbsd/">openbsd/</a></li>
+		<li><a href="//st.suckless.org/patches/palettes/">palettes/</a></li>
+		<li><a href="//st.suckless.org/patches/relativeborder/">relativeborder/</a></li>
+		<li><a href="//st.suckless.org/patches/right_click_to_plumb/">right click to plumb/</a></li>
+		<li><a href="//st.suckless.org/patches/rightclickpaste/">rightclickpaste/</a></li>
+		<li><a href="//st.suckless.org/patches/scrollback/"><b>scrollback/</b></a></li>
+		<li><a href="//st.suckless.org/patches/selectionbg-alpha/">selectionbg alpha/</a></li>
+		<li><a href="//st.suckless.org/patches/selectioncolors/">selectioncolors/</a></li>
+		<li><a href="//st.suckless.org/patches/solarized/">solarized/</a></li>
+		<li><a href="//st.suckless.org/patches/spoiler/">spoiler/</a></li>
+		<li><a href="//st.suckless.org/patches/swapmouse/">swapmouse/</a></li>
+		<li><a href="//st.suckless.org/patches/sync/">sync/</a></li>
+		<li><a href="//st.suckless.org/patches/themed_cursor/">themed cursor/</a></li>
+		<li><a href="//st.suckless.org/patches/title_parsing_fix/">title parsing fix/</a></li>
+		<li><a href="//st.suckless.org/patches/undercurl/">undercurl/</a></li>
+		<li><a href="//st.suckless.org/patches/universcroll/">universcroll/</a></li>
+		<li><a href="//st.suckless.org/patches/vertcenter/">vertcenter/</a></li>
+		<li><a href="//st.suckless.org/patches/vim_browse/">vim browse/</a></li>
+		<li><a href="//st.suckless.org/patches/visualbell/">visualbell/</a></li>
+		<li><a href="//st.suckless.org/patches/visualbell2/">visualbell2/</a></li>
+		<li><a href="//st.suckless.org/patches/w3m/">w3m/</a></li>
+		<li><a href="//st.suckless.org/patches/workingdir/">workingdir/</a></li>
+		<li><a href="//st.suckless.org/patches/xclearwin/">xclearwin/</a></li>
+		<li><a href="//st.suckless.org/patches/xrandrfontsize/">xrandrfontsize/</a></li>
+		<li><a href="//st.suckless.org/patches/xresources/">xresources/</a></li>
+		<li><a href="//st.suckless.org/patches/xresources-with-reload-signal/">xresources with reload signal/</a></li>
+		<li><a href="//st.suckless.org/patches/xtheme/">xtheme/</a></li>
+		</ul>
+	</li>
+	<li><a href="//st.suckless.org/screenshots/">screenshots/</a></li>
+	</ul>
+</div>
+<hr class="hidden"/>
+<div id="main">
+
+<h1>scrollback</h1>
+<h2>Description</h2>
+<p>Scroll back through terminal output using Shift+{PageUp, PageDown}.</p>
+<h2>Download</h2>
+<ul>
+<li><a href="st-scrollback-0.8.5.diff">st-scrollback-0.8.5.diff</a></li>
+<li><a href="st-scrollback-0.8.4.diff">st-scrollback-0.8.4.diff</a></li>
+<li><a href="st-scrollback-20201205-4ef0cbd.diff">st-scrollback-20201205-4ef0cbd.diff</a></li>
+<li><a href="st-scrollback-20210507-4536f46.diff">st-scrollback-20210507-4536f46.diff</a></li>
+</ul>
+<p>Alternative implementation that uses a ring buffer for more
+efficient scrolling:</p>
+<ul>
+<li><a href="st-scrollback-ringbuffer-0.8.5.diff">st-scrollback-ringbuffer-0.8.5.diff</a></li>
+</ul>
+<p>Apply the following patch on top of the <a href="st-scrollback-0.8.5.diff">original scrollback patch (=&gt;0.8.5)</a> to allow
+column and row reflow.</p>
+<ul>
+<li><a href="st-scrollback-reflow-0.8.5.diff">st-scrollback-reflow-0.8.5.diff</a></li>
+</ul>
+<p>Apply the following patch on top of the previous to allow scrolling
+using <code>Shift+MouseWheel</code>.</p>
+<ul>
+<li><a href="st-scrollback-mouse-20170427-5a10aca.diff">st-scrollback-mouse-20170427-5a10aca.diff</a></li>
+<li><a href="st-scrollback-mouse-0.8.diff">st-scrollback-mouse-0.8.diff</a></li>
+<li><a href="st-scrollback-mouse-0.8.2.diff">st-scrollback-mouse-0.8.2.diff</a></li>
+<li><a href="st-scrollback-mouse-20191024-a2c479c.diff">st-scrollback-mouse-20191024-a2c479c.diff</a></li>
+<li><a href="st-scrollback-mouse-20220127-2c5edf2.diff">st-scrollback-mouse-20220127-2c5edf2.diff</a></li>
+</ul>
+<p>Apply the following patch on top of the previous two to allow scrollback using
+mouse wheel only when not in <code>MODE_ALTSCREEN</code>. For example the content is being
+scrolled instead of the scrollback buffer in <code>less</code>. Consequently the Shift
+modifier for scrolling is not needed anymore. <strong>Note: patches before
+<code>20191024-a2c479c</code> might break mkeys other than scrolling functions.</strong></p>
+<ul>
+<li><a href="st-scrollback-mouse-altscreen-20170427-5a10aca.diff">st-scrollback-mouse-altscreen-20170427-5a10aca.diff</a></li>
+<li><a href="st-scrollback-mouse-altscreen-0.8.diff">st-scrollback-mouse-altscreen-0.8.diff</a></li>
+<li><a href="st-scrollback-mouse-altscreen-20190131-e23acb9.diff">st-scrollback-mouse-altscreen-20190131-e23acb9.diff</a></li>
+<li><a href="st-scrollback-mouse-altscreen-20200416-5703aa0.diff">st-scrollback-mouse-altscreen-20200416-5703aa0.diff</a></li>
+<li><a href="st-scrollback-mouse-altscreen-20220127-2c5edf2.diff">st-scrollback-mouse-altscreen-20220127-2c5edf2.diff</a></li>
+</ul>
+<p>Apply the following patch on top of the first two to allow changing how fast the mouse scrolls.</p>
+<ul>
+<li><a href="st-scrollback-mouse-increment-0.8.2.diff">st-scrollback-mouse-increment-0.8.2.diff</a></li>
+</ul>
+<h2>Notes</h2>
+<ul>
+<li>Patches modify config.def.h, you need to add mkeys to your own config.h</li>
+<li>With patches before <code>20191024-a2c479c</code>: you can not have a mshortcut for the
+same mkey so remove Button4 and Button5 from mshortcuts in config.h</li>
+<li>The mouse and altscreen patches <code>20191024-a2c479c</code> (and later) are simpler and
+more robust because st gained better support for customized mouse shortcuts.
+As a result, the altscreen patch doesn't really need the mouse patch. However
+to keep it simple the instructions stay the same: the alrscreen patch still
+applies on top of the (now very minimal) mouse patch.</li>
+</ul>
+<h2>Authors</h2>
+<ul>
+<li>Jochen Sprickerhof - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#115;&#116;&#64;&#106;&#111;&#99;&#104;&#101;&#110;&#46;&#115;&#112;&#114;&#105;&#99;&#107;&#101;&#114;&#104;&#111;&#102;&#46;&#100;&#101;">&#115;&#116;&#64;&#106;&#111;&#99;&#104;&#101;&#110;&#46;&#115;&#112;&#114;&#105;&#99;&#107;&#101;&#114;&#104;&#111;&#102;&#46;&#100;&#101;</a></li>
+<li>M Farkas-Dyck - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#115;&#116;&#114;&#97;&#107;&#101;&#56;&#56;&#56;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#116;&#114;&#97;&#107;&#101;&#56;&#56;&#56;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+<li>Ivan Tham - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#112;&#105;&#99;&#107;&#102;&#105;&#114;&#101;&#64;&#114;&#105;&#115;&#101;&#117;&#112;&#46;&#110;&#101;&#116;">&#112;&#105;&#99;&#107;&#102;&#105;&#114;&#101;&#64;&#114;&#105;&#115;&#101;&#117;&#112;&#46;&#110;&#101;&#116;</a> (mouse scrolling)</li>
+<li>Ori Bernstein - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#111;&#114;&#105;&#64;&#101;&#105;&#103;&#101;&#110;&#115;&#116;&#97;&#116;&#101;&#46;&#111;&#114;&#103;">&#111;&#114;&#105;&#64;&#101;&#105;&#103;&#101;&#110;&#115;&#116;&#97;&#116;&#101;&#46;&#111;&#114;&#103;</a> (fix memory bug)</li>
+<li>Matthias Schoth - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#109;&#115;&#99;&#104;&#111;&#116;&#104;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#115;&#99;&#104;&#111;&#116;&#104;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a> (auto altscreen scrolling)</li>
+<li>Laslo Hunhold - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#100;&#101;&#118;&#64;&#102;&#114;&#105;&#103;&#110;&#46;&#100;&#101;">&#100;&#101;&#118;&#64;&#102;&#114;&#105;&#103;&#110;&#46;&#100;&#101;</a> (unscrambling, git port)</li>
+<li>Paride Legovini - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#112;&#108;&#64;&#110;&#105;&#110;&#116;&#104;&#102;&#108;&#111;&#111;&#114;&#46;&#111;&#114;&#103;">&#112;&#108;&#64;&#110;&#105;&#110;&#116;&#104;&#102;&#108;&#111;&#111;&#114;&#46;&#111;&#114;&#103;</a> (don't require the Shift modifier
+when using the auto altscreen scrolling)</li>
+<li>Lorenzo Bracco - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#100;&#101;&#118;&#116;&#114;&#121;&#64;&#114;&#105;&#115;&#101;&#117;&#112;&#46;&#110;&#101;&#116;">&#100;&#101;&#118;&#116;&#114;&#121;&#64;&#114;&#105;&#115;&#101;&#117;&#112;&#46;&#110;&#101;&#116;</a> (update base patch, use static
+variable for config)</li>
+<li>Kamil Kleban - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#102;&#117;&#110;&#109;&#97;&#107;&#101;&#114;&#57;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#102;&#117;&#110;&#109;&#97;&#107;&#101;&#114;&#57;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a> (fix altscreen detection)</li>
+<li>Avi Halachmi - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#97;&#118;&#105;&#104;&#112;&#105;&#116;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">&#97;&#118;&#105;&#104;&#112;&#105;&#116;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;</a> (mouse + altscreen rewrite after <code>a2c479c</code>)</li>
+<li>Jacob Prosser - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#103;&#101;&#114;&#105;&#97;&#116;&#114;&#105;&#99;&#106;&#97;&#99;&#111;&#98;&#64;&#99;&#117;&#109;&#97;&#108;&#108;&#111;&#118;&#101;&#114;&#46;&#109;&#101;">&#103;&#101;&#114;&#105;&#97;&#116;&#114;&#105;&#99;&#106;&#97;&#99;&#111;&#98;&#64;&#99;&#117;&#109;&#97;&#108;&#108;&#111;&#118;&#101;&#114;&#46;&#109;&#101;</a></li>
+<li>Timo Röhling - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#116;&#105;&#109;&#111;&#64;&#103;&#97;&#117;&#115;&#115;&#103;&#108;&#111;&#99;&#107;&#101;&#46;&#100;&#101;">&#116;&#105;&#109;&#111;&#64;&#103;&#97;&#117;&#115;&#115;&#103;&#108;&#111;&#99;&#107;&#101;&#46;&#100;&#101;</a> (ring buffer implementation)</li>
+<li><a href="gopher://mineeyes.cyou/">Alexander Arkhipov</a> - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#115;&#99;&#109;&#95;&#50;&#48;&#50;&#50;&#64;&#109;&#105;&#110;&#101;&#101;&#121;&#101;&#115;&#46;&#99;&#121;&#111;&#117;">&#115;&#99;&#109;&#95;&#50;&#48;&#50;&#50;&#64;&#109;&#105;&#110;&#101;&#101;&#121;&#101;&#115;&#46;&#99;&#121;&#111;&#117;</a> (0.8.5 update)</li>
+<li>Ashish Kumar Yadav - <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#97;&#115;&#104;&#105;&#115;&#104;&#107;&#117;&#109;&#97;&#114;&#46;&#121;&#97;&#100;&#97;&#118;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#115;&#46;&#105;&#105;&#115;&#101;&#114;&#112;&#117;&#110;&#101;&#46;&#97;&#99;&#46;&#105;&#110;">&#97;&#115;&#104;&#105;&#115;&#104;&#107;&#117;&#109;&#97;&#114;&#46;&#121;&#97;&#100;&#97;&#118;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#115;&#46;&#105;&#105;&#115;&#101;&#114;&#112;&#117;&#110;&#101;&#46;&#97;&#99;&#46;&#105;&#110;</a> (reflow implementation)</li>
+</ul>
+</div>
+
+</div>
+
+</html>
